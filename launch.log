@@ -1,0 +1,63 @@
+Training script copied to:
+gs://mma440_projects/aiplatform-2024-01-18-16:41:59.494-aiplatform_custom_trainer_script-0.1.tar.gz.
+Traceback (most recent call last):
+  File "/home/philipp/project/vertex-ai-bug-encaps/venv/lib/python3.10/site-packages/proto/marshal/rules/message.py", line 36, in to_proto
+    return self._descriptor(**value)
+TypeError: bad argument type for built-in operation
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/philipp/project/vertex-ai-bug-encaps/venv/lib/python3.10/site-packages/proto/marshal/rules/message.py", line 36, in to_proto
+    return self._descriptor(**value)
+TypeError: bad argument type for built-in operation
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/philipp/project/vertex-ai-bug-encaps/venv/lib/python3.10/site-packages/proto/marshal/rules/message.py", line 36, in to_proto
+    return self._descriptor(**value)
+TypeError: bad argument type for built-in operation
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/philipp/project/vertex-ai-bug-encaps/launch_vertex_job.py", line 218, in <module>
+    args.func(args)
+  File "/home/philipp/project/vertex-ai-bug-encaps/launch_vertex_job.py", line 70, in launch_script_job
+    job = aiplatform.CustomJob.from_local_script(
+  File "/home/philipp/project/vertex-ai-bug-encaps/venv/lib/python3.10/site-packages/google/cloud/aiplatform/jobs.py", line 1619, in from_local_script
+    job = cls(
+  File "/home/philipp/project/vertex-ai-bug-encaps/venv/lib/python3.10/site-packages/google/cloud/aiplatform/jobs.py", line 1298, in __init__
+    job_spec=gca_custom_job_compat.CustomJobSpec(
+  File "/home/philipp/project/vertex-ai-bug-encaps/venv/lib/python3.10/site-packages/proto/message.py", line 581, in __init__
+    pb_value = marshal.to_proto(pb_type, value)
+  File "/home/philipp/project/vertex-ai-bug-encaps/venv/lib/python3.10/site-packages/proto/marshal/marshal.py", line 211, in to_proto
+    return type(value)(self.to_proto(proto_type, i) for i in value)
+  File "/home/philipp/project/vertex-ai-bug-encaps/venv/lib/python3.10/site-packages/proto/marshal/marshal.py", line 211, in <genexpr>
+    return type(value)(self.to_proto(proto_type, i) for i in value)
+  File "/home/philipp/project/vertex-ai-bug-encaps/venv/lib/python3.10/site-packages/proto/marshal/marshal.py", line 228, in to_proto
+    pb_value = self.get_rule(proto_type=proto_type).to_proto(value)
+  File "/home/philipp/project/vertex-ai-bug-encaps/venv/lib/python3.10/site-packages/proto/marshal/rules/message.py", line 41, in to_proto
+    return self._wrapper(value)._pb
+  File "/home/philipp/project/vertex-ai-bug-encaps/venv/lib/python3.10/site-packages/proto/message.py", line 581, in __init__
+    pb_value = marshal.to_proto(pb_type, value)
+  File "/home/philipp/project/vertex-ai-bug-encaps/venv/lib/python3.10/site-packages/proto/marshal/marshal.py", line 228, in to_proto
+    pb_value = self.get_rule(proto_type=proto_type).to_proto(value)
+  File "/home/philipp/project/vertex-ai-bug-encaps/venv/lib/python3.10/site-packages/proto/marshal/rules/message.py", line 41, in to_proto
+    return self._wrapper(value)._pb
+  File "/home/philipp/project/vertex-ai-bug-encaps/venv/lib/python3.10/site-packages/proto/message.py", line 581, in __init__
+    pb_value = marshal.to_proto(pb_type, value)
+  File "/home/philipp/project/vertex-ai-bug-encaps/venv/lib/python3.10/site-packages/proto/marshal/marshal.py", line 211, in to_proto
+    return type(value)(self.to_proto(proto_type, i) for i in value)
+  File "/home/philipp/project/vertex-ai-bug-encaps/venv/lib/python3.10/site-packages/proto/marshal/marshal.py", line 211, in <genexpr>
+    return type(value)(self.to_proto(proto_type, i) for i in value)
+  File "/home/philipp/project/vertex-ai-bug-encaps/venv/lib/python3.10/site-packages/proto/marshal/marshal.py", line 228, in to_proto
+    pb_value = self.get_rule(proto_type=proto_type).to_proto(value)
+  File "/home/philipp/project/vertex-ai-bug-encaps/venv/lib/python3.10/site-packages/proto/marshal/rules/message.py", line 41, in to_proto
+    return self._wrapper(value)._pb
+  File "/home/philipp/project/vertex-ai-bug-encaps/venv/lib/python3.10/site-packages/proto/message.py", line 581, in __init__
+    pb_value = marshal.to_proto(pb_type, value)
+  File "/home/philipp/project/vertex-ai-bug-encaps/venv/lib/python3.10/site-packages/proto/marshal/marshal.py", line 222, in to_proto
+    proto_type.DESCRIPTOR.has_options
+AttributeError: 'ProtoType' object has no attribute 'DESCRIPTOR'
